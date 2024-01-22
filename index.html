@@ -15,6 +15,8 @@
             font-family: 'Manrope', sans-serif;
         }
     </style>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/61910c2e0f.js" crossorigin="anonymous"></script>
         <!--Tailwind and Daisy UI -->
         <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
         <script src="https://cdn.tailwindcss.com"></script>
@@ -34,7 +36,7 @@
 <body class="font-manrope">
     <header class="max-w-[1170px] mt-12 mx-auto">
         <nav>
-            <div class="navbar bg-base-100">
+            <div class="navbar px-0 bg-base-100">
                 <div class="navbar-start">
                   <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -48,7 +50,7 @@
                         <li><a>Contact</a></li>
                     </ul>
                   </div>
-                  <a class="btn gap-0 btn-ghost text-2xl md:text-4xl lg:text-4xl font-extrabold">Hockey<span class="text-hockey">’</span>s</a>
+                  <a class="btn gap-0 btn-ghost text-2xl md:text-4xl px-0 lg:text-4xl font-extrabold">Hockey<span class="text-hockey">’</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
@@ -60,11 +62,42 @@
                   </ul>
                 </div>
                 <div class="navbar-end gap-6">
-                    <img class="hidden md:inline-flex lg:inline-flex" src="./Images/Frame.png" alt="">
+                    <img class="hidden md:inline- lg:inline" src="./Images/Frame.png" alt="">
                   <a class="btn bg-hockey text-xl rounded-lg px-6 font-bold text-white">Get Ticket</a>
                 </div>
               </div>
         </nav>
+        <div class="max-w-[1170px] mt-12 mx-auto">
+            <div class="carousel w-full rounded-2xl">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="./Images/1.png" class=" w-[90%] h-[200px] md:w-full md:h-full lg:w-full lg:h-full mx-auto" />
+                  <div class="absolute bottom-1 left-[38%] md:bottom-2 md:left-6 lg:bottom-2 lg:left-8 flex gap-3 md:gap-4 lg:gap-4 transform -translate-y-1/2">
+                    <a href="#slide2" class="btn bg-black border-none text-base md:text-xl lg:text-2xl  text-white btn-circle"><i class="fa-solid fa-angle-left"></i></a> 
+                    <a href="#slide2" class="btn bg-black border-none text-base md:text-xl lg:text-2xl  text-white  btn-circle"><i class="fa-solid fa-angle-right"></i></a>
+                  </div>
+                  <div class="absolute hidden md:inline lg:inline space-y-4 right-8 bottom-8 p-8 bg-black rounded-2xl">
+                    <h3 class=" text-white text-2xl font-extrabold">Meet all the heroes from the field</h3>
+                    <p class="text-[#ffffff99] md:w-[390px] lg:w-[500px]">Discover remarkable heroes in diverse fields, their passion, dedication, and the inspiring  stories shaping their impactful contributions.</p>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="./Images/1.png" class="w-full" />
+                  <div class="absolute bottom-1 left-[38%] md:bottom-2 md:left-6 lg:bottom-2 lg:left-8 flex gap-3 md:gap-4 lg:gap-4 transform -translate-y-1/2">
+                    <a href="#slide1" class="btn bg-black border-none text-base md:text-xl lg:text-2xl  text-white btn-circle"><i class="fa-solid fa-angle-left"></i></a> 
+                    <a href="#slide1" class="btn bg-black border-none text-base md:text-xl lg:text-2xl  text-white  btn-circle"><i class="fa-solid fa-angle-right"></i></a>
+                  </div>
+                  <div class="absolute hidden md:inline lg:inline space-y-4 right-8 bottom-8 p-8 bg-black rounded-2xl">
+                    <h3 class=" text-white text-2xl font-extrabold">Meet all the heroes from the field</h3>
+                    <p class="text-[#ffffff99] md:w-[390px] lg:w-[500px]">Discover remarkable heroes in diverse fields, their passion, dedication, and the inspiring  stories shaping their impactful contributions.</p>
+                  </div>
+                </div> 
+                
+              </div>
+        </div>
+        <div class="mx-5 my-4 md:hidden lg:hidden space-y-4 p-4 bg-black rounded-2xl">
+            <h3 class=" text-white text-xl font-extrabold">Meet all the heroes from the field</h3>
+            <p class="text-[#ffffff99] md:w-[390px] lg:w-[500px]">Discover remarkable heroes in diverse fields, their passion, dedication, and the inspiring  stories shaping their impactful contributions.</p>
+          </div>
     </header>
     <main>
 
